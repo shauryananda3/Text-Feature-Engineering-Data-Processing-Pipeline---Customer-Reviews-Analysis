@@ -73,19 +73,19 @@ Feature matrices are highly sparse (>90% zeros), which can lead to memory ineffi
 
 ### 🔹 Model Performance
 
-![Model Results](images/model-results.png)
+![Model Results](images/model-results.JPG)
 
 ---
 
 ### 🔹 Sparse Matrix Analysis
 
-![Sparsity](images/sparsity.png)
+![Sparsity](images/sparsity.JPG)
 
 ---
 
 ### 🔹 Top Words in Vocabulary
 
-![Top Words](images/top-words.png)
+![Top Words](images/top-words.JPG)
 
 ---
 
