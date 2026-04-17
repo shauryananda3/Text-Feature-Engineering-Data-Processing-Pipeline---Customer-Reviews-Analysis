@@ -68,6 +68,27 @@ Feature matrices are highly sparse (>90% zeros), which can lead to memory ineffi
 * Bag of Words captures frequency but ignores importance
 * TF-IDF highlights meaningful words
 
+
+## 📸 Sample Outputs
+
+### 🔹 Model Performance
+
+![Model Results](images/model-results.png)
+
+---
+
+### 🔹 Sparse Matrix Analysis
+
+![Sparsity](images/sparsity.png)
+
+---
+
+### 🔹 Top Words in Vocabulary
+
+![Top Words](images/top-words.png)
+
+---
+
 ---
 
 ## ⚖️ Comparison of Techniques
