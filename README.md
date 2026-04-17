@@ -67,7 +67,7 @@ Feature matrices are highly sparse (>90% zeros), which can lead to memory ineffi
 * TF-IDF performed better than Bag of Words in classification
 * Bag of Words captures frequency but ignores importance
 * TF-IDF highlights meaningful words
-
+  
 
 ## 📸 Sample Outputs
 
@@ -86,8 +86,6 @@ Feature matrices are highly sparse (>90% zeros), which can lead to memory ineffi
 ### 🔹 Top Words in Vocabulary
 
 ![Top Words](images/top-words.png)
-
----
 
 ---
 
