@@ -1,10 +1,14 @@
-# 📊 Customer Reviews Text Analysis using NLP
+# 📊 Customer Review Text Analysis using NLP
+
+🚀 NLP pipeline to transform customer reviews into numerical features and perform sentiment classification
+
+---
 
 ## 🔍 Overview
 
-This project builds an end-to-end Natural Language Processing (NLP) pipeline to transform raw customer reviews into numerical features and perform sentiment classification.
+This project builds an end-to-end Natural Language Processing (NLP) pipeline to process raw customer reviews and convert them into structured numerical features.
 
-It demonstrates how traditional text feature engineering techniques can be applied to real-world textual data.
+It demonstrates how traditional NLP techniques like Bag of Words and TF-IDF can be used for sentiment analysis.
 
 ---
 
@@ -49,7 +53,7 @@ It demonstrates how traditional text feature engineering techniques can be appli
 * Calculated sparsity
 
 👉 Observation:
-Feature matrices are highly sparse (>90% zeros), which can lead to memory inefficiency in large-scale systems.
+Feature matrices are highly sparse (>90% zeros), which can impact performance in large-scale systems.
 
 ---
 
@@ -67,8 +71,32 @@ Feature matrices are highly sparse (>90% zeros), which can lead to memory ineffi
 * TF-IDF performed better than Bag of Words in classification
 * Bag of Words captures frequency but ignores importance
 * TF-IDF highlights meaningful words
-  
 
+---
+
+## 📸 Sample Outputs
+
+### 🔹 Model Performance
+
+<p align="center">
+  <img src="images/model-results.jpg" width="600"/>
+</p>
+
+---
+
+### 🔹 Sparse Matrix Analysis
+
+<p align="center">
+  <img src="images/sparsity.jpg" width="600"/>
+</p>
+
+---
+
+### 🔹 Top Words in Vocabulary
+
+<p align="center">
+  <img src="images/top-words.jpg" width="600"/>
+</p>
 
 ---
 
@@ -86,7 +114,7 @@ Feature matrices are highly sparse (>90% zeros), which can lead to memory ineffi
 
 * Traditional NLP techniques do not capture semantic meaning
 * Words with similar meaning (e.g., "good" vs "excellent") are treated differently
-* Sparse matrices are inefficient for large datasets
+* Sparse matrices can be inefficient for large datasets
 
 ---
 
@@ -118,7 +146,7 @@ pip install -r requirements.txt
 Open:
 
 ```bash
-notebooks/text-feature-engineering-nlp.ipynb
+notebooks/Customer Reviews Analysis.ipynb
 ```
 
 Run all cells.
