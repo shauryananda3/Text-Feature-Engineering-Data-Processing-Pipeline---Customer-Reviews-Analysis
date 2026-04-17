@@ -1,4 +1,4 @@
-# 📊 Customer Review Text Analysis using NLP
+# 📊 Customer Reviews Text Analysis using NLP
 
 🚀 NLP pipeline to transform customer reviews into numerical features and perform sentiment classification
 
