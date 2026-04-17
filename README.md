@@ -69,23 +69,6 @@ Feature matrices are highly sparse (>90% zeros), which can lead to memory ineffi
 * TF-IDF highlights meaningful words
   
 
-## 📸 Sample Outputs
-
-### 🔹 Model Performance
-
-![Model Results](images/model-results.JPG)
-
----
-
-### 🔹 Sparse Matrix Analysis
-
-![Sparsity](images/sparsity.JPG)
-
----
-
-### 🔹 Top Words in Vocabulary
-
-![Top Words](images/top-words.JPG)
 
 ---
 
