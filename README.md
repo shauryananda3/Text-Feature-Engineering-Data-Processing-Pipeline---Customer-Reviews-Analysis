@@ -1,9 +1,10 @@
-# 📊 Text Feature Engineering - Data Processing Pipeline : Customer Reviews Analysis
+# 📊 Customer Reviews Text Analysis using NLP
 
-## 🔍 Problem Statement
+## 🔍 Overview
 
-Businesses receive large volumes of customer reviews, making it difficult to manually extract insights.
-This project builds a text processing pipeline to convert raw text into numerical features and perform sentiment classification.
+This project builds an end-to-end Natural Language Processing (NLP) pipeline to transform raw customer reviews into numerical features and perform sentiment classification.
+
+It demonstrates how traditional text feature engineering techniques can be applied to real-world textual data.
 
 ---
 
@@ -14,21 +15,19 @@ This project builds a text processing pipeline to convert raw text into numerica
 
 ---
 
-## ⚙️ Approach
+## ⚙️ Workflow
 
 ### 1. Text Preprocessing
 
-* Converted text to lowercase
+* Lowercasing
 * Tokenization
-* Removed punctuation
-* Removed stopwords
+* Removal of punctuation
+* Stopword removal
 * Lemmatization
 
 ---
 
-### 2. Feature Engineering
-
-Implemented multiple techniques to convert text into numerical form:
+### 2. Feature Engineering Techniques
 
 * **One Hot Encoding** (manual implementation)
 * **Bag of Words (BoW)** using CountVectorizer
@@ -36,7 +35,7 @@ Implemented multiple techniques to convert text into numerical form:
 
 ---
 
-### 3. Vocabulary Creation
+### 3. Vocabulary Analysis
 
 * Built vocabulary from processed text
 * Analyzed frequent words
@@ -46,46 +45,46 @@ Implemented multiple techniques to convert text into numerical form:
 
 ### 4. Sparse Matrix Analysis
 
-* Generated feature matrices for BoW and TF-IDF
-* Calculated sparsity (percentage of zero values)
+* Generated feature matrices
+* Calculated sparsity
 
 👉 Observation:
-Feature matrices are highly sparse, meaning most values are zero, which can lead to memory inefficiency in large-scale systems.
+Feature matrices are highly sparse (>90% zeros), which can lead to memory inefficiency in large-scale systems.
 
 ---
 
-### 5. Model Building
+### 5. Sentiment Classification
 
 * Logistic Regression
 * Naive Bayes
 
-Goal: Classify customer reviews into **positive** and **negative**
+**Goal:** Classify customer reviews into **positive** and **negative**
 
 ---
 
-## 📊 Results & Observations
+## 📊 Results
 
-* TF-IDF performed better than Bag of Words in sentiment classification
-* Bag of Words focuses on frequency, but ignores importance
-* TF-IDF highlights important words by reducing weight of common terms
+* TF-IDF performed better than Bag of Words in classification
+* Bag of Words captures frequency but ignores importance
+* TF-IDF highlights meaningful words
 
 ---
 
 ## ⚖️ Comparison of Techniques
 
-| Method           | Advantage                | Limitation          |
-| ---------------- | ------------------------ | ------------------- |
-| One Hot Encoding | Simple representation    | High dimensional    |
-| Bag of Words     | Captures word frequency  | No semantic meaning |
-| TF-IDF           | Captures word importance | Ignores context     |
+| Method           | Strength         | Limitation          |
+| ---------------- | ---------------- | ------------------- |
+| One Hot Encoding | Simple           | High dimensional    |
+| Bag of Words     | Frequency-based  | No semantic meaning |
+| TF-IDF           | Importance-based | Ignores context     |
 
 ---
 
-## 🧠 Key Insights
+## 🧠 Key Learnings
 
-* Traditional NLP methods do not capture semantic meaning
+* Traditional NLP techniques do not capture semantic meaning
 * Words with similar meaning (e.g., "good" vs "excellent") are treated differently
-* Sparse matrices can be inefficient for large datasets
+* Sparse matrices are inefficient for large datasets
 
 ---
 
@@ -97,7 +96,7 @@ Goal: Classify customer reviews into **positive** and **negative**
 * **When to use BoW vs TF-IDF?**
 
   * BoW → simple tasks like spam detection
-  * TF-IDF → tasks like sentiment analysis
+  * TF-IDF → sentiment analysis and keyword importance
 
 * **Limitations of TF-IDF**
 
@@ -106,26 +105,42 @@ Goal: Classify customer reviews into **positive** and **negative**
 
 ---
 
+## ▶️ How to Run
+
+```bash
+git clone https://github.com/shauryananda3/customer-review-text-analysis.git
+cd customer-review-text-analysis
+pip install -r requirements.txt
+```
+
+Open:
+
+```bash
+notebooks/text-feature-engineering-nlp.ipynb
+```
+
+Run all cells.
+
+---
+
 ## 🛠️ Tech Stack
 
 * Python
 * Pandas, NumPy
 * Scikit-learn
-* NLP techniques
 
 ---
 
 ## 📌 Conclusion
 
-This project demonstrates how raw text data can be transformed into structured numerical features using NLP techniques.
-It also highlights the strengths and limitations of traditional methods like Bag of Words and TF-IDF.
+This project demonstrates how raw text data can be transformed into structured numerical features using NLP techniques, and highlights the strengths and limitations of traditional approaches like Bag of Words and TF-IDF.
 
 ---
 
 ## 🚀 Future Improvements
 
-* Use Word Embeddings (Word2Vec, GloVe)
-* Apply Transformer models (BERT)
-* Deploy as a real-time application
+* Word Embeddings (Word2Vec, GloVe)
+* Transformer models (BERT)
+* Real-time deployment
 
 ---
